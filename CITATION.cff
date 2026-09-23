@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+message: "If you use this software or dataset, please cite it as below."
+title: "DPC-PINN-Wasserstein: physics-informed joint conductivity–porosity mapping with Wasserstein-2 experimental design"
+type: software
+authors:
+  - family-names: "Zeqiraj"
+    given-names: "Dulian"
+    affiliation: "Faculty of Geology and Mining, Polytechnic University of Tirana (UPT-FGJM), Tirana, Albania"
+    # orcid: "https://orcid.org/0000-0000-0000-0000"   # <-- add your ORCID here, then remove the '#'
+version: "2.8.0"
+date-released: "2026-09-23"
+license: MIT
+repository-code: "https://github.com/dulianzeqiraj/DPC-PINN-Wasserstein"
+keywords:
+  - "physics-informed neural networks"
+  - "hydraulic conductivity"
+  - "effective porosity"
+  - "optimal experimental design"
+  - "Wasserstein distance"
+  - "conformal prediction"
+  - "groundwater"
+  - "alluvial aquifer"

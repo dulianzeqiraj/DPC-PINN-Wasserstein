@@ -1,0 +1,8 @@
+MATLAB: 26.1 (R2026a)
+gpuDeviceCount: 1   (0 = no GPU, or Parallel Computing Toolbox missing)
+GPU: NVIDIA GeForce GTX 1050 (3.5 GB free)
+Deep Learning Toolbox (dlarray): 1
+Statistics Toolbox (TreeBagger): 1
+CPU threads: 4
+Free RAM: 9.8 GB
+Date: 18-Sep-2026 19:10:35

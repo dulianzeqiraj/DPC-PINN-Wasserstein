@@ -1,0 +1,205 @@
+
+	Trial License -- for use to evaluate programs for possible purchase as an end-user only.
+
+GPU detected -> folds train on GPU.
+[> In dlarray/gpuArray (line 22)
+In main_ablation_factorial (line 78)
+In run (line 100)] 
+[Warning: Support for GPU devices with compute capability 6.1 will be removed in a future MATLAB release. For more information on GPU support, see <a
+href="matlab:web('http://www.mathworks.com/help/parallel-computing/gpu-computing-requirements.html','-browser')">GPU Computing Requirements</a>.] 
+Collocation pool... geo-prior calib: K_far=83 K_chan=148 m/day  R2=0.20
+done (7.6 s).
+Fold sizes: [8 8 7 7 7]
+
+9 modes x 5 folds = 45 cells. Existing checkpoints are skipped.
+
+################ MODE 1/9: base  (L4=0 L5=0 L6=0 L7=0) ################
+  base fold 1: checkpoint exists, skipped.
+  base fold 2: checkpoint exists, skipped.
+  base fold 3: checkpoint exists, skipped.
+  base fold 4: checkpoint exists, skipped.
+  base fold 5: checkpoint exists, skipped.
+
+################ MODE 2/9: +L5  (L4=0 L5=0.05 L6=0 L7=0) ################
+  +L5 fold 1: checkpoint exists, skipped.
+  +L5 fold 2: checkpoint exists, skipped.
+
+=== +L5 FOLD 3/5: train 30, test 7 ===
+  geo-prior calib on 30 training wells: K_far=83 K_chan=136 m/day  R2=0.14
++L5-F3 ep   600 | L=5.781e+00 | L2 3.92e-01 L3 9.44e-02 BCd 0.00e+00 BCn 2.02e-01
++L5-F3 ep  1200 | L=4.380e+00 | L2 2.69e-01 L3 9.13e-02 BCd 0.00e+00 BCn 2.16e-01
++L5-F3 early stop at epoch 1520 (plateau 0.95% over 300 ep)
+  MC-dropout pass 20/30
+  saved ..\results\ablation_fac\L5_f3.mat
+
+=== +L5 FOLD 4/5: train 30, test 7 ===
+  geo-prior calib on 30 training wells: K_far=88 K_chan=159 m/day  R2=0.20
++L5-F4 ep   600 | L=6.130e+00 | L2 4.28e-01 L3 1.02e-01 BCd 0.00e+00 BCn 2.54e-01
++L5-F4 ep  1200 | L=5.887e+00 | L2 4.06e-01 L3 1.05e-01 BCd 0.00e+00 BCn 2.62e-01
++L5-F4 early stop at epoch 1356 (plateau 0.95% over 300 ep)
+  MC-dropout pass 20/30
+  saved ..\results\ablation_fac\L5_f4.mat
+
+=== +L5 FOLD 5/5: train 30, test 7 ===
+  geo-prior calib on 30 training wells: K_far=71 K_chan=151 m/day  R2=0.32
++L5-F5 ep   600 | L=5.577e+00 | L2 3.50e-01 L3 1.20e-01 BCd 0.00e+00 BCn 2.42e-01
++L5-F5 ep  1200 | L=4.824e+00 | L2 3.08e-01 L3 8.53e-02 BCd 0.00e+00 BCn 2.49e-01
++L5-F5 early stop at epoch 1457 (plateau 0.95% over 300 ep)
+  MC-dropout pass 20/30
+  saved ..\results\ablation_fac\L5_f5.mat
+
+################ MODE 3/9: +L6  (L4=0 L5=0 L6=0.5 L7=0) ################
+
+=== +L6 FOLD 1/5: train 29, test 8 ===
+  geo-prior calib on 29 training wells: K_far=84 K_chan=137 m/day  R2=0.16
++L6-F1 ep   600 | L=4.261e+00 | L2 3.47e-01 L3 2.03e-02 BCd 0.00e+00 BCn 1.67e-01
++L6-F1 ep  1200 | L=3.809e+00 | L2 3.21e-01 L3 1.40e-02 BCd 0.00e+00 BCn 1.68e-01
++L6-F1 ep  1800 | L=4.170e+00 | L2 3.56e-01 L3 1.73e-02 BCd 0.00e+00 BCn 1.85e-01
+  MC-dropout pass 20/30
+  saved ..\results\ablation_fac\L6_f1.mat
+
+=== +L6 FOLD 2/5: train 29, test 8 ===
+  geo-prior calib on 29 training wells: K_far=88 K_chan=162 m/day  R2=0.22
++L6-F2 ep   600 | L=5.317e+00 | L2 4.07e-01 L3 7.14e-02 BCd 0.00e+00 BCn 1.59e-01
++L6-F2 ep  1200 | L=4.097e+00 | L2 3.14e-01 L3 5.15e-02 BCd 0.00e+00 BCn 1.69e-01
++L6-F2 early stop at epoch 1758 (plateau 0.95% over 300 ep)
+  MC-dropout pass 20/30
+  saved ..\results\ablation_fac\L6_f2.mat
+
+=== +L6 FOLD 3/5: train 30, test 7 ===
+  geo-prior calib on 30 training wells: K_far=83 K_chan=136 m/day  R2=0.14
++L6-F3 ep   600 | L=4.693e+00 | L2 3.10e-01 L3 9.92e-02 BCd 0.00e+00 BCn 2.04e-01
++L6-F3 ep  1200 | L=4.332e+00 | L2 3.59e-01 L3 2.62e-02 BCd 0.00e+00 BCn 1.28e-01
++L6-F3 ep  1800 | L=3.905e+00 | L2 3.11e-01 L3 3.42e-02 BCd 0.00e+00 BCn 1.36e-01
+  MC-dropout pass 20/30
+  saved ..\results\ablation_fac\L6_f3.mat
+
+=== +L6 FOLD 4/5: train 30, test 7 ===
+  geo-prior calib on 30 training wells: K_far=88 K_chan=159 m/day  R2=0.20
++L6-F4 ep   600 | L=5.711e+00 | L2 4.46e-01 L3 7.73e-02 BCd 0.00e+00 BCn 1.82e-01
++L6-F4 ep  1200 | L=5.872e+00 | L2 4.40e-01 L3 9.60e-02 BCd 0.00e+00 BCn 2.30e-01
++L6-F4 early stop at epoch 1633 (plateau 0.98% over 300 ep)
+  MC-dropout pass 20/30
+  saved ..\results\ablation_fac\L6_f4.mat
+
+=== +L6 FOLD 5/5: train 30, test 7 ===
+  geo-prior calib on 30 training wells: K_far=71 K_chan=151 m/day  R2=0.32
++L6-F5 ep   600 | L=3.651e+00 | L2 2.62e-01 L3 4.60e-02 BCd 0.00e+00 BCn 1.65e-01
++L6-F5 ep  1200 | L=3.676e+00 | L2 3.10e-01 L3 1.49e-02 BCd 0.00e+00 BCn 1.34e-01
++L6-F5 early stop at epoch 1499 (plateau 0.96% over 300 ep)
+  MC-dropout pass 20/30
+  saved ..\results\ablation_fac\L6_f5.mat
+
+################ MODE 4/9: +L7  (L4=0 L5=0 L6=0 L7=1.5) ################
+
+=== +L7 FOLD 1/5: train 29, test 8 ===
+  geo-prior calib on 29 training wells: K_far=84 K_chan=137 m/day  R2=0.16
++L7-F1 ep   600 | L=5.028e+00 | L2 4.05e-01 L3 2.76e-02 BCd 0.00e+00 BCn 1.86e-01
++L7-F1 ep  1200 | L=4.240e+00 | L2 3.57e-01 L3 1.24e-02 BCd 0.00e+00 BCn 1.69e-01
++L7-F1 early stop at epoch 1772 (plateau 0.94% over 300 ep)
+  MC-dropout pass 20/30
+  saved ..\results\ablation_fac\L7_f1.mat
+
+=== +L7 FOLD 2/5: train 29, test 8 ===
+  geo-prior calib on 29 training wells: K_far=88 K_chan=162 m/day  R2=0.22
++L7-F2 ep   600 | L=5.212e+00 | L2 3.95e-01 L3 7.61e-02 BCd 0.00e+00 BCn 1.94e-01
++L7-F2 ep  1200 | L=4.908e+00 | L2 3.65e-01 L3 7.37e-02 BCd 0.00e+00 BCn 1.99e-01
++L7-F2 early stop at epoch 1420 (plateau 0.86% over 300 ep)
+  MC-dropout pass 20/30
+  saved ..\results\ablation_fac\L7_f2.mat
+
+=== +L7 FOLD 3/5: train 30, test 7 ===
+  geo-prior calib on 30 training wells: K_far=83 K_chan=136 m/day  R2=0.14
++L7-F3 ep   600 | L=4.898e+00 | L2 3.28e-01 L3 8.70e-02 BCd 0.00e+00 BCn 1.46e-01
++L7-F3 ep  1200 | L=4.291e+00 | L2 3.45e-01 L3 3.65e-02 BCd 0.00e+00 BCn 9.95e-02
++L7-F3 ep  1800 | L=3.942e+00 | L2 3.10e-01 L3 3.07e-02 BCd 0.00e+00 BCn 1.10e-01
+  MC-dropout pass 20/30
+  saved ..\results\ablation_fac\L7_f3.mat
+
+=== +L7 FOLD 4/5: train 30, test 7 ===
+  geo-prior calib on 30 training wells: K_far=88 K_chan=159 m/day  R2=0.20
++L7-F4 ep   600 | L=6.086e+00 | L2 4.59e-01 L3 8.46e-02 BCd 0.00e+00 BCn 2.14e-01
++L7-F4 ep  1200 | L=5.115e+00 | L2 3.86e-01 L3 6.93e-02 BCd 0.00e+00 BCn 2.28e-01
++L7-F4 early stop at epoch 1520 (plateau 0.96% over 300 ep)
+  MC-dropout pass 20/30
+  saved ..\results\ablation_fac\L7_f4.mat
+
+=== +L7 FOLD 5/5: train 30, test 7 ===
+  geo-prior calib on 30 training wells: K_far=71 K_chan=151 m/day  R2=0.32
++L7-F5 ep   600 | L=5.061e+00 | L2 3.77e-01 L3 5.95e-02 BCd 0.00e+00 BCn 1.71e-01
++L7-F5 ep  1200 | L=4.160e+00 | L2 3.33e-01 L3 2.22e-02 BCd 0.00e+00 BCn 1.49e-01
++L7-F5 early stop at epoch 1781 (plateau 0.93% over 300 ep)
+  MC-dropout pass 20/30
+  saved ..\results\ablation_fac\L7_f5.mat
+
+################ MODE 5/9: +L5+L6  (L4=0 L5=0.05 L6=0.5 L7=0) ################
+
+=== +L5+L6 FOLD 1/5: train 29, test 8 ===
+  geo-prior calib on 29 training wells: K_far=84 K_chan=137 m/day  R2=0.16
++L5+L6-F1 ep   600 | L=5.268e+00 | L2 3.64e-01 L3 6.54e-02 BCd 0.00e+00 BCn 2.11e-01
++L5+L6-F1 ep  1200 | L=5.464e+00 | L2 4.25e-01 L3 4.29e-02 BCd 0.00e+00 BCn 2.14e-01
++L5+L6-F1 early stop at epoch 1494 (plateau 0.99% over 300 ep)
+  MC-dropout pass 20/30
+  saved ..\results\ablation_fac\L5L6_f1.mat
+
+=== +L5+L6 FOLD 2/5: train 29, test 8 ===
+  geo-prior calib on 29 training wells: K_far=88 K_chan=162 m/day  R2=0.22
++L5+L6-F2 ep   600 | L=5.951e+00 | L2 4.24e-01 L3 9.15e-02 BCd 0.00e+00 BCn 1.81e-01
++L5+L6-F2 ep  1200 | L=5.575e+00 | L2 3.95e-01 L3 8.54e-02 BCd 0.00e+00 BCn 2.31e-01
++L5+L6-F2 early stop at epoch 1413 (plateau 0.95% over 300 ep)
+  MC-dropout pass 20/30
+  saved ..\results\ablation_fac\L5L6_f2.mat
+
+=== +L5+L6 FOLD 3/5: train 30, test 7 ===
+  geo-prior calib on 30 training wells: K_far=83 K_chan=136 m/day  R2=0.14
++L5+L6-F3 ep   600 | L=5.918e+00 | L2 4.03e-01 L3 9.82e-02 BCd 0.00e+00 BCn 2.28e-01
++L5+L6-F3 ep  1200 | L=5.109e+00 | L2 3.29e-01 L3 1.01e-01 BCd 0.00e+00 BCn 2.14e-01
++L5+L6-F3 early stop at epoch 1713 (plateau 0.98% over 300 ep)
+  MC-dropout pass 20/30
+  saved ..\results\ablation_fac\L5L6_f3.mat
+
+=== +L5+L6 FOLD 4/5: train 30, test 7 ===
+  geo-prior calib on 30 training wells: K_far=88 K_chan=159 m/day  R2=0.20
++L5+L6-F4 ep   600 | L=6.338e+00 | L2 4.28e-01 L3 1.28e-01 BCd 0.00e+00 BCn 2.47e-01
++L5+L6-F4 ep  1200 | L=6.058e+00 | L2 4.20e-01 L3 1.05e-01 BCd 0.00e+00 BCn 2.68e-01
++L5+L6-F4 early stop at epoch 1324 (plateau 0.96% over 300 ep)
+  MC-dropout pass 20/30
+  saved ..\results\ablation_fac\L5L6_f4.mat
+
+=== +L5+L6 FOLD 5/5: train 30, test 7 ===
+  geo-prior calib on 30 training wells: K_far=71 K_chan=151 m/day  R2=0.32
++L5+L6-F5 ep   600 | L=5.524e+00 | L2 3.80e-01 L3 8.98e-02 BCd 0.00e+00 BCn 1.92e-01
++L5+L6-F5 ep  1200 | L=4.916e+00 | L2 3.23e-01 L3 8.59e-02 BCd 0.00e+00 BCn 2.24e-01
++L5+L6-F5 early stop at epoch 1581 (plateau 0.97% over 300 ep)
+  MC-dropout pass 20/30
+  saved ..\results\ablation_fac\L5L6_f5.mat
+
+################ MODE 6/9: +L5+L7  (L4=0 L5=0.05 L6=0 L7=1.5) ################
+
+=== +L5+L7 FOLD 1/5: train 29, test 8 ===
+  geo-prior calib on 29 training wells: K_far=84 K_chan=137 m/day  R2=0.16
++L5+L7-F1 ep   600 | L=6.236e+00 | L2 4.60e-01 L3 7.24e-02 BCd 0.00e+00 BCn 1.84e-01
++L5+L7-F1 ep  1200 | L=5.141e+00 | L2 3.70e-01 L3 5.87e-02 BCd 0.00e+00 BCn 2.12e-01
++L5+L7-F1 early stop at epoch 1713 (plateau 0.96% over 300 ep)
+  MC-dropout pass 20/30
+  saved ..\results\ablation_fac\L5L7_f1.mat
+
+=== +L5+L7 FOLD 2/5: train 29, test 8 ===
+  geo-prior calib on 29 training wells: K_far=88 K_chan=162 m/day  R2=0.22
++L5+L7-F2 ep   600 | L=5.279e+00 | L2 3.38e-01 L3 1.06e-01 BCd 0.00e+00 BCn 1.95e-01
++L5+L7-F2 ep  1200 | L=5.080e+00 | L2 3.36e-01 L3 7.75e-02 BCd 0.00e+00 BCn 2.47e-01
++L5+L7-F2 early stop at epoch 1453 (plateau 0.96% over 300 ep)
+  MC-dropout pass 20/30
+  saved ..\results\ablation_fac\L5L7_f2.mat
+
+=== +L5+L7 FOLD 3/5: train 30, test 7 ===
+  geo-prior calib on 30 training wells: K_far=83 K_chan=136 m/day  R2=0.14
++L5+L7-F3 ep   600 | L=5.139e+00 | L2 2.71e-01 L3 1.47e-01 BCd 0.00e+00 BCn 2.31e-01
++L5+L7-F3 ep  1200 | L=5.275e+00 | L2 3.42e-01 L3 9.74e-02 BCd 0.00e+00 BCn 2.14e-01
++L5+L7-F3 early stop at epoch 1670 (plateau 0.99% over 300 ep)
+  MC-dropout pass 20/30
+  saved ..\results\ablation_fac\L5L7_f3.mat
+
+=== +L5+L7 FOLD 4/5: train 30, test 7 ===
+  geo-prior calib on 30 training wells: K_far=88 K_chan=159 m/day  R2=0.20
++L5+L7-F4 ep   600 | L=6.546e+00 | L2 4.57e-01 L3 1.11e-01 BCd 0.00e+00 BCn 2.23e-01

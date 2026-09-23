@@ -1,0 +1,36 @@
+
+	Trial License -- for use to evaluate programs for possible purchase as an end-user only.
+
+(a)  log K : n=37, raw cov at 90% = 10.8%, conformal = 94.6%
+(b)  hydraulic head h (m) : n=37, raw cov at 90% = 37.8%, conformal = 94.6%
+Written: ..\figures\fig7_reliability.png
+[Warning: Column headers from the file were modified to make them valid MATLAB identifiers before creating variable names for the table.
+The original column headers are saved in the VariableDescriptions property.
+Set 'VariableNamingRule' to 'preserve' to use the original column headers as table variable names.] 
+Written fig9a_oed_plain.png : 1031 x 1928 px, aspect 0.5348 (frame 0.5201)
+Written fig9b_oed_drastic.png : 974 x 1932 px, aspect 0.5041 (frame 0.4882)
+
+selected wells, plain:
+    rank     x_km      y_km     W2sq_utility
+    ____    ______    ______    ____________
+
+     1       8.318    31.815      0.27108   
+     2      1.6544    31.976      0.26695   
+     3      8.5614    30.923      0.26199   
+     4      2.7916    32.908      0.26115   
+     5      8.7021    32.573      0.24832   
+
+selected wells, DRASTIC-weighted:
+    rank     x_km      y_km     W2sq_weighted
+    ____    ______    ______    _____________
+
+     1      8.5614    30.923       0.26483   
+     2      1.6544    31.976       0.25516   
+     3       8.318    31.815       0.26088   
+     4      10.156    31.199       0.23438   
+     5      7.9071    31.978       0.23056   
+
+Note for the caption: the utility printed for each rank is the RAW utility at that
+site. Selection order follows the utility re-scored after each posterior update, so
+the printed values need not decrease with rank.
+STAGE_OK

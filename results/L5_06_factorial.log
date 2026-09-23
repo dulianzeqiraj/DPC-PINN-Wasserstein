@@ -1,0 +1,49 @@
+
+	Trial License -- for use to evaluate programs for possible purchase as an end-user only.
+
+GPU detected -> folds train on GPU.
+[> In dlarray/gpuArray (line 22)
+In main_ablation_factorial (line 78)
+In run (line 100)] 
+[Warning: Support for GPU devices with compute capability 6.1 will be removed in a future MATLAB release. For more information on GPU support, see <a
+href="matlab:web('http://www.mathworks.com/help/parallel-computing/gpu-computing-requirements.html','-browser')">GPU Computing Requirements</a>.] 
+Collocation pool... geo-prior calib: K_far=83 K_chan=148 m/day  R2=0.20
+done (5.8 s).
+Fold sizes: [8 8 7 7 7]
+
+9 modes x 5 folds = 45 cells. Existing checkpoints are skipped.
+
+################ MODE 1/9: base  (L4=0 L5=0 L6=0 L7=0) ################
+
+=== base FOLD 1/5: train 29, test 8 ===
+  geo-prior calib on 29 training wells: K_far=84 K_chan=137 m/day  R2=0.16
+base-F1 ep   600 | L=4.512e+00 | L2 3.74e-01 L3 2.29e-02 BCd 0.00e+00 BCn 1.64e-01
+base-F1 ep  1200 | L=4.569e+00 | L2 3.91e-01 L3 1.87e-02 BCd 0.00e+00 BCn 1.54e-01
+base-F1 early stop at epoch 1285 (plateau 0.94% over 300 ep)
+  MC-dropout pass 20/30
+  saved ..\results\ablation_fac\base_f1.mat
+  base fold 2: checkpoint exists, skipped.
+  base fold 3: checkpoint exists, skipped.
+  base fold 4: checkpoint exists, skipped.
+  base fold 5: checkpoint exists, skipped.
+
+################ MODE 2/9: +L5  (L4=0 L5=0.05 L6=0 L7=0) ################
+
+=== +L5 FOLD 1/5: train 29, test 8 ===
+  geo-prior calib on 29 training wells: K_far=84 K_chan=137 m/day  R2=0.16
++L5-F1 ep   600 | L=4.952e+00 | L2 3.53e-01 L3 4.85e-02 BCd 0.00e+00 BCn 2.13e-01
++L5-F1 ep  1200 | L=5.587e+00 | L2 4.13e-01 L3 5.71e-02 BCd 0.00e+00 BCn 2.22e-01
++L5-F1 early stop at epoch 1528 (plateau 0.99% over 300 ep)
+  MC-dropout pass 20/30
+  saved ..\results\ablation_fac\L5_f1.mat
+
+=== +L5 FOLD 2/5: train 29, test 8 ===
+  geo-prior calib on 29 training wells: K_far=88 K_chan=162 m/day  R2=0.22
++L5-F2 ep   600 | L=5.364e+00 | L2 3.51e-01 L3 1.00e-01 BCd 0.00e+00 BCn 2.61e-01
++L5-F2 ep  1200 | L=4.909e+00 | L2 3.21e-01 L3 8.70e-02 BCd 0.00e+00 BCn 2.37e-01
++L5-F2 early stop at epoch 1521 (plateau 0.96% over 300 ep)
+  MC-dropout pass 20/30
+  saved ..\results\ablation_fac\L5_f2.mat
+
+=== +L5 FOLD 3/5: train 30, test 7 ===
+  geo-prior calib on 30 training wells: K_far=83 K_chan=136 m/day  R2=0.14

@@ -1,0 +1,37 @@
+
+	Trial License -- for use to evaluate programs for possible purchase as an end-user only.
+
+[Warning: Support for GPU devices with compute capability 6.1 will be removed in a future MATLAB release. For more information on GPU support, see <a
+href="matlab:web('http://www.mathworks.com/help/parallel-computing/gpu-computing-requirements.html','-browser')">GPU Computing Requirements</a>.] 
+[> In make_fig11_synthetic (line 19)
+In run (line 100)] 
+[Warning: Column headers from the file were modified to make them valid MATLAB identifiers before creating variable names for the table. The original column headers are saved in
+the VariableDescriptions property.
+Set 'VariableNamingRule' to 'preserve' to use the original column headers as table variable names.] 
+grid 209 x 83, 5598 cells carried
+logK field RMSE 0.2900, correlation 0.586
+n    field RMSE 0.0177, correlation 0.445
+Written: figures/fig11_synthetic.png at 15.5 x 9.6 cm
+[Warning: Column headers from the file were modified to make them valid MATLAB identifiers before creating variable names for the table.
+The original column headers are saved in the VariableDescriptions property.
+Set 'VariableNamingRule' to 'preserve' to use the original column headers as table variable names.] 
+37 wells, sample variance of log K = 0.280
+Written: ..\figures\figS1_variogram.png
+lag       along  pairs   across  pairs
+1.0       0.000      3    0.007      6
+3.0       0.220     22    0.168     17
+5.0       0.278     19    0.384     17
+7.0       0.235     12    0.641     12
+9.0       0.142     12    0.869     10
+11.0      0.090      7    0.961      1
+13.0      0.112      8    0.961      1
+[Warning: Column headers from the file were modified to make them valid MATLAB identifiers before creating variable names for the table.
+The original column headers are saved in the VariableDescriptions property.
+Set 'VariableNamingRule' to 'preserve' to use the original column headers as table variable names.] 
+[S3] polygon: 3411 digitized vertices, 3411 after removing duplicates.
+[S3] Adriatic segment: 801 vertices (23% of the perimeter).
+[S3] no-flow nodes actually penalized: 161 (every 5th of the segment).
+Written: figures/figS3_boundary.png
+Written: ..\figures\fig4_framework.png
+   2386 x 1412 px, aspect 1.6898 (frame is 1.6363)
+STAGE_OK

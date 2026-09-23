@@ -1,0 +1,167 @@
+
+	Trial License -- for use to evaluate programs for possible purchase as an end-user only.
+
+GPU detected -> folds train on GPU.
+[> In dlarray/gpuArray (line 22)
+In main_ablation_factorial (line 78)
+In run (line 100)] 
+[Warning: Support for GPU devices with compute capability 6.1 will be removed in a future MATLAB release. For more information on GPU support, see <a
+href="matlab:web('http://www.mathworks.com/help/parallel-computing/gpu-computing-requirements.html','-browser')">GPU Computing Requirements</a>.] 
+Collocation pool... geo-prior calib: K_far=83 K_chan=148 m/day  R2=0.20
+done (5.8 s).
+Fold sizes: [8 8 7 7 7]
+
+9 modes x 5 folds = 45 cells. Existing checkpoints are skipped.
+
+################ MODE 1/9: base  (L4=0 L5=0 L6=0 L7=0) ################
+  base fold 1: checkpoint exists, skipped.
+  base fold 2: checkpoint exists, skipped.
+  base fold 3: checkpoint exists, skipped.
+  base fold 4: checkpoint exists, skipped.
+  base fold 5: checkpoint exists, skipped.
+
+################ MODE 2/9: +L5  (L4=0 L5=0.05 L6=0 L7=0) ################
+  +L5 fold 1: checkpoint exists, skipped.
+  +L5 fold 2: checkpoint exists, skipped.
+  +L5 fold 3: checkpoint exists, skipped.
+  +L5 fold 4: checkpoint exists, skipped.
+  +L5 fold 5: checkpoint exists, skipped.
+
+################ MODE 3/9: +L6  (L4=0 L5=0 L6=0.5 L7=0) ################
+  +L6 fold 1: checkpoint exists, skipped.
+  +L6 fold 2: checkpoint exists, skipped.
+  +L6 fold 3: checkpoint exists, skipped.
+  +L6 fold 4: checkpoint exists, skipped.
+  +L6 fold 5: checkpoint exists, skipped.
+
+################ MODE 4/9: +L7  (L4=0 L5=0 L6=0 L7=1.5) ################
+  +L7 fold 1: checkpoint exists, skipped.
+  +L7 fold 2: checkpoint exists, skipped.
+  +L7 fold 3: checkpoint exists, skipped.
+  +L7 fold 4: checkpoint exists, skipped.
+  +L7 fold 5: checkpoint exists, skipped.
+
+################ MODE 5/9: +L5+L6  (L4=0 L5=0.05 L6=0.5 L7=0) ################
+  +L5+L6 fold 1: checkpoint exists, skipped.
+  +L5+L6 fold 2: checkpoint exists, skipped.
+  +L5+L6 fold 3: checkpoint exists, skipped.
+  +L5+L6 fold 4: checkpoint exists, skipped.
+  +L5+L6 fold 5: checkpoint exists, skipped.
+
+################ MODE 6/9: +L5+L7  (L4=0 L5=0.05 L6=0 L7=1.5) ################
+  +L5+L7 fold 1: checkpoint exists, skipped.
+  +L5+L7 fold 2: checkpoint exists, skipped.
+  +L5+L7 fold 3: checkpoint exists, skipped.
+  +L5+L7 fold 4: checkpoint exists, skipped.
+  +L5+L7 fold 5: checkpoint exists, skipped.
+
+################ MODE 7/9: +L6+L7  (L4=0 L5=0 L6=0.5 L7=1.5) ################
+  +L6+L7 fold 1: checkpoint exists, skipped.
+  +L6+L7 fold 2: checkpoint exists, skipped.
+  +L6+L7 fold 3: checkpoint exists, skipped.
+  +L6+L7 fold 4: checkpoint exists, skipped.
+  +L6+L7 fold 5: checkpoint exists, skipped.
+
+################ MODE 8/9: full  (L4=0 L5=0.05 L6=0.5 L7=1.5) ################
+  full fold 1: checkpoint exists, skipped.
+  full fold 2: checkpoint exists, skipped.
+
+=== full FOLD 3/5: train 30, test 7 ===
+  geo-prior calib on 30 training wells: K_far=83 K_chan=136 m/day  R2=0.14
+full-F3 ep   600 | L=4.999e+00 | L2 2.85e-01 L3 1.12e-01 BCd 0.00e+00 BCn 2.04e-01
+full-F3 ep  1200 | L=4.528e+00 | L2 2.62e-01 L3 1.02e-01 BCd 0.00e+00 BCn 2.21e-01
+full-F3 early stop at epoch 1436 (plateau 0.98% over 300 ep)
+  MC-dropout pass 20/30
+  saved ..\results\ablation_fac\full_f3.mat
+
+=== full FOLD 4/5: train 30, test 7 ===
+  geo-prior calib on 30 training wells: K_far=88 K_chan=159 m/day  R2=0.20
+full-F4 ep   600 | L=6.228e+00 | L2 4.19e-01 L3 1.05e-01 BCd 0.00e+00 BCn 2.47e-01
+full-F4 ep  1200 | L=5.831e+00 | L2 4.08e-01 L3 8.69e-02 BCd 0.00e+00 BCn 2.69e-01
+full-F4 early stop at epoch 1632 (plateau 0.98% over 300 ep)
+  MC-dropout pass 20/30
+  saved ..\results\ablation_fac\full_f4.mat
+
+=== full FOLD 5/5: train 30, test 7 ===
+  geo-prior calib on 30 training wells: K_far=71 K_chan=151 m/day  R2=0.32
+full-F5 ep   600 | L=5.839e+00 | L2 3.72e-01 L3 1.07e-01 BCd 0.00e+00 BCn 2.48e-01
+full-F5 ep  1200 | L=4.630e+00 | L2 2.94e-01 L3 8.44e-02 BCd 0.00e+00 BCn 2.22e-01
+full-F5 early stop at epoch 1638 (plateau 0.97% over 300 ep)
+  MC-dropout pass 20/30
+  saved ..\results\ablation_fac\full_f5.mat
+
+################ MODE 9/9: base+L4  (L4=0.1 L5=0 L6=0 L7=0) ################
+  base+L4 fold 1: checkpoint exists, skipped.
+  base+L4 fold 2: checkpoint exists, skipped.
+  base+L4 fold 3: checkpoint exists, skipped.
+  base+L4 fold 4: checkpoint exists, skipped.
+  base+L4 fold 5: checkpoint exists, skipped.
+
+All cells present after 23.7 min.
+
+================ FACTORIAL ABLATION (logK, n=37 held out per mode) ================
+      mode       L5    L6    L7    L4    logK_RMSE    logK_MAE    factor    cov90_K_pct    head_RMSE    head_MAE    cov90_h_pct
+    _________    __    __    __    __    _________    ________    ______    ___________    _________    ________    ___________
+
+    "base"       0     0     0     0      0.42061     0.21922     1.5229      72.973         6.887       5.8661       18.919   
+    "+L5"        1     0     0     0      0.33778     0.26898     1.4018      16.216        6.8664       5.8746       18.919   
+    "+L6"        0     1     0     0      0.41476     0.21971      1.514      72.973        6.7668       5.7421       24.324   
+    "+L7"        0     0     1     0      0.40567     0.22986     1.5003      72.973        6.8794       5.8437       21.622   
+    "+L5+L6"     1     1     0     0      0.33838     0.27325     1.4027      5.4054        6.7999       5.7878       24.324   
+    "+L5+L7"     1     0     1     0      0.34316     0.27644     1.4094      5.4054        6.7957       5.8128       21.622   
+    "+L6+L7"     0     1     1     0      0.40448     0.22768     1.4985      67.568        6.8288       5.9057       13.514   
+    "full"       1     1     1     0      0.34741     0.28081     1.4154      10.811        6.7916       5.8268       13.514   
+    "base+L4"    0     0     0     1      0.42448     0.22885     1.5288       70.27        6.8667       5.8922       18.919   
+
+
+---- main effects and interactions on held-out logK RMSE ----
+(negative = switching the term ON reduces the error)
+  L5 (anisotropy)          -0.0697
+  L6 (Kozeny-Carman)       -0.0005
+  L7 (channel geometry)    -0.0027
+  L5 x L6                  +0.0030
+  L5 x L7                  +0.0099
+  L6 x L7                  +0.0021
+  L5 x L6 x L7             -0.0003
+
+base = 0.4206   full = 0.3474   difference = -0.0732
+DRASTIC evidence row: base+L4 = 0.4245  (base = 0.4206, change +0.0039)
+
+Written: results/ablation_factorial_wells.csv, _rows.csv, _effects.csv
+cells on disk: 45 of 45
+COMPLETE modes  : base, +L5, +L6, +L7, +L5+L6, +L5+L7, +L6+L7, full, base+L4
+INCOMPLETE modes: 
+
+============ ABLATION, 9 complete modes, n=37 held out each ============
+      mode       L5    L6    L7    L4    logK_RMSE    logK_MAE    factor    cov90_K_pct    head_RMSE    head_MAE    cov90_h_pct
+    _________    __    __    __    __    _________    ________    ______    ___________    _________    ________    ___________
+
+    "base"       0     0     0     0      0.42061     0.21922     1.5229      72.973         6.887       5.8661       18.919   
+    "+L5"        1     0     0     0      0.33778     0.26898     1.4018      16.216        6.8664       5.8746       18.919   
+    "+L6"        0     1     0     0      0.41476     0.21971      1.514      72.973        6.7668       5.7421       24.324   
+    "+L7"        0     0     1     0      0.40567     0.22986     1.5003      72.973        6.8794       5.8437       21.622   
+    "+L5+L6"     1     1     0     0      0.33838     0.27325     1.4027      5.4054        6.7999       5.7878       24.324   
+    "+L5+L7"     1     0     1     0      0.34316     0.27644     1.4094      5.4054        6.7957       5.8128       21.622   
+    "+L6+L7"     0     1     1     0      0.40448     0.22768     1.4985      67.568        6.8288       5.9057       13.514   
+    "full"       1     1     1     0      0.34741     0.28081     1.4154      10.811        6.7916       5.8268       13.514   
+    "base+L4"    0     0     0     1      0.42448     0.22885     1.5288       70.27        6.8667       5.8922       18.919   
+
+
+---- one-at-a-time contribution against the physics-and-data baseline ----
+  +L5    -0.0828  (0.3378 from 0.4206, -19.7%)
+  +L6    -0.0058  (0.4148 from 0.4206, -1.4%)
+  +L7    -0.0149  (0.4057 from 0.4206, -3.6%)
+  base+L4 +0.0039   (the DRASTIC term removed in v2.7)
+  full   -0.0732   (all three priors together)
+
+---- main effects and interactions (negative means the term helps) ----
+  L5 (anisotropy)          -0.0697
+  L6 (Kozeny-Carman)       -0.0005
+  L7 (channel geometry)    -0.0027
+  L5 x L6                  +0.0030
+  L5 x L7                  +0.0099
+  L6 x L7                  +0.0021
+  L5 x L6 x L7             -0.0003
+
+Written: results/ablation_factorial_wells.csv, results/ablation_factorial_rows.csv
+STAGE_OK

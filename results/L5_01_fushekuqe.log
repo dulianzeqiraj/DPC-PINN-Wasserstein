@@ -1,0 +1,90 @@
+
+	Trial License -- for use to evaluate programs for possible purchase as an end-user only.
+
+Boundary vertices: 3411 -> 3411 after de-duplication.
+Boundary roles (raw vertices): FREE 2610 | no-flow 801 (of which Adriatic shoreline 801) | Dirichlet 0
+No-flow penalty points after subsampling: 161. See figures/check_boundary_segments.png
+KC prefactors (log): coarse 7.474, medium 7.704, fine 7.488
+GPU detected -> training on GPU.
+[> In dlarray/gpuArray (line 22)
+In deep.internal.recording.containerfeval>iDispatch_1in (line 58)
+In deep.internal.recording.containerfeval>iProcessCell_1in (line 115)
+In deep.internal.recording.containerfeval>iProcessStruct_1in (line 133)
+In deep.internal.recording.containerfeval>iDispatch_1in (line 63)
+In deep.internal.recording.containerfeval>iProcessCell_1in (line 115)
+In deep.internal.recording.containerfeval>iProcessStruct_1in (line 133)
+In deep.internal.recording.containerfeval>iDispatch_1in (line 63)
+In deep.internal.recording.containerfeval (line 35)
+In deep.internal.networkContainerFixedArgsFun (line 29)
+In dlupdate (line 99)
+In main_fushekuqe (line 117)
+In run (line 100)] 
+[Warning: Support for GPU devices with compute capability 6.1 will be removed in a future MATLAB release. For more information on GPU
+support, see <a href="matlab:web('http://www.mathworks.com/help/parallel-computing/gpu-computing-requirements.html','-browser')">GPU
+Computing Requirements</a>.] 
+Building collocation pool (40000 pts, one-time)... geo-prior calib: K_far=83 K_chan=148 m/day  R2=0.20
+done (9.6 s).
+Training...
+ep 1 done in 3.48 s  ->  rough total for 2500 epochs: 145.2 min
+   [VERSION CHECK] scaling active: hMu=26.43 hSd=11.40 kMu=4.73 | clip=1
+ep     1 | L=1.488e+03 | L1 1.44e+03 L2 3.24e+00 L3 7.43e-01 L4 0.00e+00 L5 1.23e+01 L6 6.01e-01 BCd 2.03e-01 BCn 0.00e+00
+ep 9.254133e+00 | L=ep     2 | L=3.706e+02 | L1 3.27e+02 L2 3.11e+00 L3 8.98e-01 L4 0.00e+00 L5 1.24e+01 L6 6.17e-01 BCd 2.77e-01 BCn 0.00e+00
+ep 1.925690e+00 | L=ep     3 | L=1.630e+02 | L1 1.20e+02 L2 2.98e+00 L3 1.13e+00 L4 0.00e+00 L5 1.05e+01 L6 8.53e-01 BCd 4.64e-01 BCn 0.00e+00
+ep 5.638202e-01 | L=ep     4 | L=1.028e+02 | L1 5.40e+01 L2 2.66e+00 L3 1.97e+00 L4 0.00e+00 L5 8.54e+00 L6 1.25e+00 BCd 7.23e-01 BCn 0.00e+00
+ep 3.668977e-01 | L=ep     5 | L=7.362e+01 | L1 2.51e+01 L2 2.00e+00 L3 2.56e+00 L4 0.00e+00 L5 7.00e+00 L6 1.71e+00 BCd 1.02e+00 BCn 0.00e+00
+ep 1.685229e-01 | L=ep    50 | L=1.079e+01 | L1 1.51e+00 L2 6.20e-01 L3 2.42e-01 L4 0.00e+00 L5 7.99e+00 L6 1.11e-01 BCd 8.36e-02 BCn 0.00e+00
+ep 7.840266e-02 | L=ep   100 | L=8.538e+00 | L1 8.55e-01 L2 5.72e-01 L3 1.38e-01 L4 0.00e+00 L5 6.38e+00 L6 6.02e-02 BCd 7.65e-02 BCn 0.00e+00
+ep 1.192748e-01 | L=ep   150 | L=8.142e+00 | L1 6.88e-01 L2 5.59e-01 L3 1.30e-01 L4 0.00e+00 L5 6.22e+00 L6 3.58e-02 BCd 6.54e-02 BCn 0.00e+00
+ep 1.359612e-01 | L=ep   200 | L=9.125e+00 | L1 5.35e-01 L2 6.58e-01 L3 1.49e-01 L4 0.00e+00 L5 5.38e+00 L6 2.41e-02 BCd 5.95e-02 BCn 0.00e+00
+ep 1.556122e-01 | L=ep   250 | L=7.164e+00 | L1 5.34e-01 L2 4.63e-01 L3 1.44e-01 L4 0.00e+00 L5 5.31e+00 L6 1.56e-02 BCd 5.64e-02 BCn 0.00e+00
+ep 1.946786e-01 | L=ep   300 | L=6.157e+00 | L1 4.58e-01 L2 3.89e-01 L3 1.34e-01 L4 0.00e+00 L5 4.48e+00 L6 1.13e-02 BCd 5.30e-02 BCn 0.00e+00
+ep 1.586242e-01 | L=ep   350 | L=6.742e+00 | L1 5.07e-01 L2 4.45e-01 L3 1.25e-01 L4 0.00e+00 L5 5.09e+00 L6 8.38e-03 BCd 4.35e-02 BCn 0.00e+00
+ep 2.163233e-01 | L=ep   400 | L=5.681e+00 | L1 3.46e-01 L2 3.61e-01 L3 1.16e-01 L4 0.00e+00 L5 6.14e+00 L6 5.09e-03 BCd 4.85e-02 BCn 0.00e+00
+ep 1.834321e-01 | L=ep   450 | L=6.724e+00 | L1 3.79e-01 L2 4.78e-01 L3 1.02e-01 L4 0.00e+00 L5 5.55e+00 L6 4.39e-03 BCd 4.56e-02 BCn 0.00e+00
+ep 1.976891e-01 | L=ep   500 | L=5.598e+00 | L1 3.03e-01 L2 3.60e-01 L3 1.08e-01 L4 0.00e+00 L5 6.23e+00 L6 3.26e-03 BCd 4.82e-02 BCn 0.00e+00
+ep 2.233178e-01 | L=ep   550 | L=6.342e+00 | L1 3.71e-01 L2 4.25e-01 L3 1.08e-01 L4 0.00e+00 L5 6.99e+00 L6 2.26e-03 BCd 4.55e-02 BCn 0.00e+00
+ep 2.171464e-01 | L=ep   600 | L=6.030e+00 | L1 2.91e-01 L2 4.09e-01 L3 1.00e-01 L4 0.00e+00 L5 6.71e+00 L6 1.45e-03 BCd 4.59e-02 BCn 0.00e+00
+ep 2.418699e-01 | L=ep   650 | L=6.080e+00 | L1 3.43e-01 L2 4.21e-01 L3 9.47e-02 L4 0.00e+00 L5 5.35e+00 L6 1.08e-03 BCd 4.49e-02 BCn 0.00e+00
+ep 2.476862e-01 | L=ep   700 | L=5.669e+00 | L1 3.30e-01 L2 3.67e-01 L3 1.01e-01 L4 0.00e+00 L5 6.71e+00 L6 1.03e-03 BCd 4.04e-02 BCn 0.00e+00
+ep 2.609580e-01 | L=ep   750 | L=5.262e+00 | L1 2.31e-01 L2 3.53e-01 L3 8.76e-02 L4 0.00e+00 L5 7.11e+00 L6 8.04e-04 BCd 4.34e-02 BCn 0.00e+00
+ep 2.066301e-01 | L=ep   800 | L=5.009e+00 | L1 2.85e-01 L2 3.21e-01 L3 9.61e-02 L4 0.00e+00 L5 5.39e+00 L6 6.82e-04 BCd 3.62e-02 BCn 0.00e+00
+ep 2.285804e-01 | L=ep   850 | L=5.455e+00 | L1 2.82e-01 L2 3.56e-01 L3 1.02e-01 L4 0.00e+00 L5 5.42e+00 L6 5.67e-04 BCd 3.54e-02 BCn 0.00e+00
+ep 2.676120e-01 | L=ep   900 | L=5.488e+00 | L1 2.62e-01 L2 3.73e-01 L3 8.37e-02 L4 0.00e+00 L5 6.24e+00 L6 5.62e-04 BCd 3.67e-02 BCn 0.00e+00
+ep 2.949583e-01 | L=ep   950 | L=6.138e+00 | L1 2.53e-01 L2 4.38e-01 L3 8.74e-02 L4 0.00e+00 L5 6.60e+00 L6 5.94e-04 BCd 4.01e-02 BCn 0.00e+00
+ep 2.453123e-01 | L=ep  1000 | L=5.887e+00 | L1 2.58e-01 L2 3.96e-01 L3 9.63e-02 L4 0.00e+00 L5 7.89e+00 L6 4.42e-04 BCd 4.55e-02 BCn 0.00e+00
+ep 2.446080e-01 | L=ep  1050 | L=5.241e+00 | L1 2.58e-01 L2 3.63e-01 L3 7.14e-02 L4 0.00e+00 L5 6.66e+00 L6 4.65e-04 BCd 3.82e-02 BCn 0.00e+00
+ep 2.488550e-01 | L=ep  1100 | L=5.159e+00 | L1 2.11e-01 L2 3.47e-01 L3 9.23e-02 L4 0.00e+00 L5 5.39e+00 L6 4.26e-04 BCd 3.96e-02 BCn 0.00e+00
+ep 2.309531e-01 | L=ep  1150 | L=5.622e+00 | L1 2.31e-01 L2 3.89e-01 L3 8.67e-02 L4 0.00e+00 L5 6.67e+00 L6 3.63e-04 BCd 3.93e-02 BCn 0.00e+00
+ep 2.441619e-01 | L=ep  1200 | L=5.066e+00 | L1 1.76e-01 L2 3.43e-01 L3 8.37e-02 L4 0.00e+00 L5 6.47e+00 L6 3.78e-04 BCd 4.50e-02 BCn 0.00e+00
+ep 2.304506e-01 | L=ep  1250 | L=5.195e+00 | L1 2.36e-01 L2 3.51e-01 L3 8.60e-02 L4 0.00e+00 L5 6.14e+00 L6 3.34e-04 BCd 3.40e-02 BCn 0.00e+00
+ep 2.278017e-01 | L=ep  1300 | L=5.125e+00 | L1 2.41e-01 L2 3.43e-01 L3 8.71e-02 L4 0.00e+00 L5 6.04e+00 L6 3.14e-04 BCd 3.48e-02 BCn 0.00e+00
+ep 2.259854e-01 | L=ep  1350 | L=5.310e+00 | L1 2.47e-01 L2 3.55e-01 L3 8.51e-02 L4 0.00e+00 L5 7.28e+00 L6 3.07e-04 BCd 3.98e-02 BCn 0.00e+00
+ep 2.347638e-01 | L=ep  1400 | L=5.514e+00 | L1 2.73e-01 L2 3.78e-01 L3 7.96e-02 L4 0.00e+00 L5 7.47e+00 L6 2.63e-04 BCd 3.64e-02 BCn 0.00e+00
+ep 2.358482e-01 | L=ep  1450 | L=5.071e+00 | L1 2.26e-01 L2 3.46e-01 L3 7.91e-02 L4 0.00e+00 L5 6.04e+00 L6 2.71e-04 BCd 3.75e-02 BCn 0.00e+00
+ep 2.327850e-01 | L=ep  1500 | L=5.095e+00 | L1 2.18e-01 L2 3.41e-01 L3 8.61e-02 L4 0.00e+00 L5 6.04e+00 L6 3.01e-04 BCd 3.94e-02 BCn 0.00e+00
+ep 2.420486e-01 | L=ep  1550 | L=5.304e+00 | L1 2.15e-01 L2 3.59e-01 L3 8.46e-02 L4 0.00e+00 L5 7.83e+00 L6 2.42e-04 BCd 3.73e-02 BCn 0.00e+00
+ep 2.093097e-01 | L=early stop at epoch 1556 (plateau 0.97% over 300 ep)
+Training done. Parameters saved to results/trained_params.mat
+Post-processing: building prediction grid... done (15.2 s). MC-dropout UQ (T=50) on 130350 nodes:
+  MC-dropout pass 20/50
+  MC-dropout pass 40/50
+Writing fields + figures... done.
+  MC-dropout pass 20/50
+  MC-dropout pass 40/50
+In-sample logK RMSE (diagnostic only; CV is the real metric): 0.288
+
+DONE. Next: 5-fold CV (run main_cv.m), bootstrap ensemble (uq_bootstrap.m), then OED (main_oed_w2.m).
+betaF has 3 entries; facies classes present: coarse, medium, fine
+     facies     beta_initial    beta_fitted    K_at_n_030_mday
+    ________    ____________    ___________    _______________
+
+    "coarse"       7.4736         7.6191           112.23     
+    "medium"       7.7041         7.6246           112.85     
+    "fine"         7.4879         7.6332           113.83     
+
+
+Read this as: the prefactor is calibrated, not taken from the printed constants.
+The textbook form with a 30 mm diameter and n = 0.32 gives 3e5 m/day, three orders
+of magnitude above the 50 to 200 m/day measured at the wells.
+Written: results/kozeny_carman_prefactors.csv
+STAGE_OK

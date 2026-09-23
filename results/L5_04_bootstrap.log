@@ -1,0 +1,43 @@
+
+	Trial License -- for use to evaluate programs for possible purchase as an end-user only.
+
+GPU detected -> members train sequentially on GPU.
+[> In dlarray/gpuArray (line 22)
+In uq_bootstrap (line 66)
+In run (line 100)] 
+[Warning: Support for GPU devices with compute capability 6.1 will be removed in a future MATLAB release. For more information on GPU support, see <a
+href="matlab:web('http://www.mathworks.com/help/parallel-computing/gpu-computing-requirements.html','-browser')">GPU Computing Requirements</a>.] 
+Collocation pool... geo-prior calib: K_far=83 K_chan=148 m/day  R2=0.20
+done (5.2 s).
+Bootstrap: M=30 members x 1800 epochs. Existing checkpoints are skipped.
+  geo-prior calib on 37 training wells: K_far=100 K_chan=158 m/day  R2=0.14
+B01 ep   600 | L=8.264e+00 | L2 6.84e-01 L3 7.22e-02 BCd 0.00e+00 BCn 2.16e-01
+B01 ep  1200 | L=8.639e+00 | L2 7.31e-01 L3 6.56e-02 BCd 0.00e+00 BCn 2.24e-01
+B01 early stop at epoch 1358 (plateau 0.96% over 300 ep)
+  MC-dropout pass 20/30
+member 01 done (OOB n=14).
+  geo-prior calib on 37 training wells: K_far=61 K_chan=179 m/day  R2=0.60
+B02 ep   600 | L=4.230e+00 | L2 2.85e-01 L3 3.41e-02 BCd 0.00e+00 BCn 2.24e-01
+B02 ep  1200 | L=3.875e+00 | L2 2.51e-01 L3 2.96e-02 BCd 0.00e+00 BCn 2.75e-01
+B02 early stop at epoch 1546 (plateau 0.92% over 300 ep)
+  MC-dropout pass 20/30
+member 02 done (OOB n=15).
+  geo-prior calib on 37 training wells: K_far=95 K_chan=157 m/day  R2=0.17
+B03 ep   600 | L=3.083e+00 | L2 1.84e-01 L3 4.10e-02 BCd 0.00e+00 BCn 1.72e-01
+B03 ep  1200 | L=2.933e+00 | L2 1.93e-01 L3 3.73e-02 BCd 0.00e+00 BCn 1.56e-01
+B03 early stop at epoch 1397 (plateau 0.97% over 300 ep)
+  MC-dropout pass 20/30
+member 03 done (OOB n=13).
+  geo-prior calib on 37 training wells: K_far=89 K_chan=146 m/day  R2=0.13
+B04 ep   600 | L=5.258e+00 | L2 3.59e-01 L3 8.62e-02 BCd 0.00e+00 BCn 2.00e-01
+B04 ep  1200 | L=4.644e+00 | L2 3.15e-01 L3 7.74e-02 BCd 0.00e+00 BCn 1.93e-01
+B04 early stop at epoch 1691 (plateau 0.99% over 300 ep)
+  MC-dropout pass 20/30
+member 04 done (OOB n=15).
+  geo-prior calib on 37 training wells: K_far=62 K_chan=149 m/day  R2=0.43
+B05 ep   600 | L=6.595e+00 | L2 4.86e-01 L3 6.82e-02 BCd 0.00e+00 BCn 1.75e-01
+B05 ep  1200 | L=6.385e+00 | L2 4.57e-01 L3 7.15e-02 BCd 0.00e+00 BCn 2.21e-01
+B05 early stop at epoch 1517 (plateau 0.99% over 300 ep)
+  MC-dropout pass 20/30
+member 05 done (OOB n=12).
+  geo-prior calib on 37 training wells: K_far=77 K_chan=147 m/day  R2=0.20

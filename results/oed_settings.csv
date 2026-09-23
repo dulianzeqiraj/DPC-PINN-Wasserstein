@@ -1,0 +1,11 @@
+setting,value
+S,200
+nCand,400
+nY,256
+epsilon,0.05
+nIter,200
+kSelect,5
+sigma_y,0.287931042749046
+sd_logK,0.379398335973231
+sd_n,0.0231473606516822
+seed,20260610

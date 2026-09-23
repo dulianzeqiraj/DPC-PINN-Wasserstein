@@ -1,0 +1,41 @@
+# --- MATLAB temporary / autosave files ---
+*.asv
+*.m~
+*.autosave
+*.mlx.bak
+
+# --- Compiled / generated MATLAB artifacts ---
+*.mex*
+*.slxc
+slprj/
+codegen/
+*.lock
+
+# --- Optional: large result binaries (uncomment if you do NOT want to track them) ---
+# *.mat
+
+# --- Operating system junk ---
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# --- Editors ---
+.vscode/
+.idea/
+*.swp
+
+# --- internal working material, deliberately not published ---
+# Superseded results kept as an audit trail. This folder holds OLD copies of cv_results.csv,
+# baselines_results.csv, oed_selected_plain.csv and TABLE5_draft.csv under the same filenames as
+# the current ones, so publishing it would put contradictory numbers in the deposit.
+results/_v1_dhe_te_perziera/
+results/_version_check/
+
+# Diagnostic logs, regenerable from the scripts that write them.
+results/diag_*_log.txt
+
+# Editor and patch backups
+*.bak
+*.bak_*
+README.md.bak
+results/_done_*

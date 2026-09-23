@@ -1,0 +1,29 @@
+
+	Trial License -- for use to evaluate programs for possible purchase as an end-user only.
+
+Folds verified identical to main_cv run. 
+fold 1 done
+fold 2 done
+fold 3 done
+fold 4 done
+fold 5 done
+
+========= BASELINES - identical 5-fold CV (n=37) =========
+method        RMSE    MAE     factor    cov90    
+OK            0.352  0.209  1.42      95%
+RK+DRASTIC    0.346  0.205  1.41      95%
+RF            0.412  0.321  1.51      89%
+(DPC-PINN from results/cv_results.csv: RMSE 0.347, MAE 0.282, factor 1.42)
+
+========= HEADS, same folds (Reviewer 4, point 4) =========
+ordinary kriging       RMSE   4.83 m   MAE   3.55 m   cov90  95%
+climatological mean    RMSE  11.24 m
+DPC-PINN               RMSE   6.82 m   MAE   5.81 m
+
+========= POROSITY from kriged K (Reviewer 4, point 5) =========
+kriging-derived n at the held-out wells: 0.236 to 0.372, mean 0.305
+There is no measured porosity to score this against. The comparison that can be scored
+is on the known field in main_synthetic.m.
+
+Per-well predictions written to results/baselines_results.csv
+STAGE_OK

@@ -1,0 +1,25 @@
+{
+  "title": "DPC-PINN-Wasserstein: physics-informed joint conductivity-porosity mapping with Wasserstein-2 experimental design",
+  "description": "MATLAB implementation and curated dataset for a physics-informed neural network that jointly infers hydraulic conductivity and effective porosity in alluvial aquifers, with conformal-calibrated uncertainty and a Wasserstein-2 optimal experimental design criterion. Demonstrated on the Fushe-Kuqe alluvial aquifer, northwestern Albania.",
+  "version": "2.8.0",
+  "upload_type": "software",
+  "publication_date": "2026-09-23",
+  "license": "MIT",
+  "access_right": "open",
+  "creators": [
+    {
+      "name": "Zeqiraj, Dulian",
+      "affiliation": "Faculty of Geology and Mining, Polytechnic University of Tirana (UPT-FGJM), Tirana, Albania"
+    }
+  ],
+  "keywords": [
+    "physics-informed neural networks",
+    "hydraulic conductivity",
+    "effective porosity",
+    "optimal experimental design",
+    "Wasserstein distance",
+    "conformal prediction",
+    "groundwater",
+    "Fushe-Kuqe aquifer"
+  ]
+}

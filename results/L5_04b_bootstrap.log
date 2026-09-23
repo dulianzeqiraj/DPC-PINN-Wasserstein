@@ -1,0 +1,151 @@
+
+	Trial License -- for use to evaluate programs for possible purchase as an end-user only.
+
+GPU detected -> members train sequentially on GPU.
+[> In dlarray/gpuArray (line 22)
+In uq_bootstrap (line 66)
+In run (line 100)] 
+[Warning: Support for GPU devices with compute capability 6.1 will be removed in a future MATLAB release. For more information on GPU support, see <a
+href="matlab:web('http://www.mathworks.com/help/parallel-computing/gpu-computing-requirements.html','-browser')">GPU Computing Requirements</a>.] 
+Collocation pool... geo-prior calib: K_far=83 K_chan=148 m/day  R2=0.20
+done (7.3 s).
+Bootstrap: M=30 members x 1800 epochs. Existing checkpoints are skipped.
+member 01: checkpoint exists, skipped.
+member 02: checkpoint exists, skipped.
+member 03: checkpoint exists, skipped.
+member 04: checkpoint exists, skipped.
+member 05: checkpoint exists, skipped.
+  geo-prior calib on 37 training wells: K_far=77 K_chan=147 m/day  R2=0.20
+B06 ep   600 | L=5.679e+00 | L2 3.31e-01 L3 1.38e-01 BCd 0.00e+00 BCn 2.17e-01
+B06 ep  1200 | L=6.169e+00 | L2 4.10e-01 L3 9.69e-02 BCd 0.00e+00 BCn 1.74e-01
+B06 ep  1800 | L=4.913e+00 | L2 3.04e-01 L3 8.96e-02 BCd 0.00e+00 BCn 1.90e-01
+  MC-dropout pass 20/30
+member 06 done (OOB n=14).
+  geo-prior calib on 37 training wells: K_far=67 K_chan=151 m/day  R2=0.29
+B07 ep   600 | L=6.242e+00 | L2 3.62e-01 L3 1.66e-01 BCd 0.00e+00 BCn 2.84e-01
+B07 ep  1200 | L=6.434e+00 | L2 4.12e-01 L3 1.39e-01 BCd 0.00e+00 BCn 3.04e-01
+B07 early stop at epoch 1726 (plateau 0.99% over 300 ep)
+  MC-dropout pass 20/30
+member 07 done (OOB n=14).
+  geo-prior calib on 37 training wells: K_far=91 K_chan=147 m/day  R2=0.15
+B08 ep   600 | L=4.701e+00 | L2 3.10e-01 L3 8.14e-02 BCd 0.00e+00 BCn 1.88e-01
+B08 ep  1200 | L=4.514e+00 | L2 2.79e-01 L3 8.94e-02 BCd 0.00e+00 BCn 2.30e-01
+B08 early stop at epoch 1562 (plateau 0.92% over 300 ep)
+  MC-dropout pass 20/30
+member 08 done (OOB n=16).
+  geo-prior calib on 37 training wells: K_far=87 K_chan=148 m/day  R2=0.18
+B09 ep   600 | L=8.795e+00 | L2 7.13e-01 L3 9.77e-02 BCd 0.00e+00 BCn 1.80e-01
+B09 ep  1200 | L=8.949e+00 | L2 7.45e-01 L3 7.60e-02 BCd 0.00e+00 BCn 2.05e-01
+B09 early stop at epoch 1525 (plateau 1.00% over 300 ep)
+  MC-dropout pass 20/30
+member 09 done (OOB n=16).
+  geo-prior calib on 37 training wells: K_far=69 K_chan=157 m/day  R2=0.37
+B10 ep   600 | L=8.340e+00 | L2 6.11e-01 L3 1.06e-01 BCd 0.00e+00 BCn 2.24e-01
+B10 ep  1200 | L=7.395e+00 | L2 5.52e-01 L3 8.10e-02 BCd 0.00e+00 BCn 2.46e-01
+B10 early stop at epoch 1358 (plateau 1.00% over 300 ep)
+  MC-dropout pass 20/30
+member 10 done (OOB n=14).
+  geo-prior calib on 37 training wells: K_far=85 K_chan=171 m/day  R2=0.31
+B11 ep   600 | L=6.279e+00 | L2 4.52e-01 L3 8.19e-02 BCd 0.00e+00 BCn 2.27e-01
+B11 ep  1200 | L=5.442e+00 | L2 3.77e-01 L3 7.34e-02 BCd 0.00e+00 BCn 2.73e-01
+B11 early stop at epoch 1282 (plateau 0.98% over 300 ep)
+  MC-dropout pass 20/30
+member 11 done (OOB n=13).
+  geo-prior calib on 37 training wells: K_far=61 K_chan=147 m/day  R2=0.37
+B12 ep   600 | L=8.285e+00 | L2 6.11e-01 L3 1.15e-01 BCd 0.00e+00 BCn 1.46e-01
+B12 ep  1200 | L=7.554e+00 | L2 5.49e-01 L3 1.06e-01 BCd 0.00e+00 BCn 1.68e-01
+B12 early stop at epoch 1503 (plateau 0.97% over 300 ep)
+  MC-dropout pass 20/30
+member 12 done (OOB n=12).
+  geo-prior calib on 37 training wells: K_far=81 K_chan=136 m/day  R2=0.15
+B13 ep   600 | L=6.436e+00 | L2 4.43e-01 L3 9.98e-02 BCd 0.00e+00 BCn 2.86e-01
+B13 ep  1200 | L=5.719e+00 | L2 3.92e-01 L3 9.37e-02 BCd 0.00e+00 BCn 2.97e-01
+B13 early stop at epoch 1330 (plateau 0.99% over 300 ep)
+  MC-dropout pass 20/30
+member 13 done (OOB n=11).
+  geo-prior calib on 37 training wells: K_far=74 K_chan=141 m/day  R2=0.27
+B14 ep   600 | L=5.367e+00 | L2 3.45e-01 L3 9.69e-02 BCd 0.00e+00 BCn 1.92e-01
+B14 ep  1200 | L=5.200e+00 | L2 3.45e-01 L3 8.92e-02 BCd 0.00e+00 BCn 1.84e-01
+B14 early stop at epoch 1531 (plateau 0.96% over 300 ep)
+  MC-dropout pass 20/30
+member 14 done (OOB n=12).
+  geo-prior calib on 37 training wells: K_far=118 K_chan=161 m/day  R2=0.06
+B15 ep   600 | L=3.827e+00 | L2 2.46e-01 L3 4.83e-02 BCd 0.00e+00 BCn 2.17e-01
+B15 ep  1200 | L=3.567e+00 | L2 2.41e-01 L3 4.30e-02 BCd 0.00e+00 BCn 2.35e-01
+B15 early stop at epoch 1329 (plateau 0.90% over 300 ep)
+  MC-dropout pass 20/30
+member 15 done (OOB n=14).
+  geo-prior calib on 37 training wells: K_far=66 K_chan=150 m/day  R2=0.41
+B16 ep   600 | L=4.923e+00 | L2 3.27e-01 L3 5.92e-02 BCd 0.00e+00 BCn 2.20e-01
+B16 ep  1200 | L=4.543e+00 | L2 3.02e-01 L3 5.07e-02 BCd 0.00e+00 BCn 2.12e-01
+B16 early stop at epoch 1578 (plateau 0.98% over 300 ep)
+  MC-dropout pass 20/30
+member 16 done (OOB n=14).
+  geo-prior calib on 37 training wells: K_far=75 K_chan=155 m/day  R2=0.30
+B17 ep   600 | L=5.160e+00 | L2 3.57e-01 L3 6.03e-02 BCd 0.00e+00 BCn 2.22e-01
+B17 ep  1200 | L=5.321e+00 | L2 4.05e-01 L3 3.51e-02 BCd 0.00e+00 BCn 1.99e-01
+B17 early stop at epoch 1620 (plateau 0.97% over 300 ep)
+  MC-dropout pass 20/30
+member 17 done (OOB n=11).
+  geo-prior calib on 37 training wells: K_far=80 K_chan=126 m/day  R2=0.11
+B18 ep   600 | L=5.332e+00 | L2 3.11e-01 L3 1.27e-01 BCd 0.00e+00 BCn 1.31e-01
+B18 ep  1200 | L=4.482e+00 | L2 2.62e-01 L3 9.82e-02 BCd 0.00e+00 BCn 1.38e-01
+B18 early stop at epoch 1689 (plateau 1.00% over 300 ep)
+  MC-dropout pass 20/30
+member 18 done (OOB n=15).
+  geo-prior calib on 37 training wells: K_far=79 K_chan=162 m/day  R2=0.30
+B19 ep   600 | L=5.533e+00 | L2 3.53e-01 L3 1.10e-01 BCd 0.00e+00 BCn 1.82e-01
+B19 ep  1200 | L=4.787e+00 | L2 3.20e-01 L3 7.97e-02 BCd 0.00e+00 BCn 2.01e-01
+B19 early stop at epoch 1637 (plateau 0.98% over 300 ep)
+  MC-dropout pass 20/30
+member 19 done (OOB n=11).
+  geo-prior calib on 37 training wells: K_far=94 K_chan=125 m/day  R2=0.06
+B20 ep   600 | L=5.038e+00 | L2 3.18e-01 L3 1.12e-01 BCd 0.00e+00 BCn 1.92e-01
+B20 ep  1200 | L=4.289e+00 | L2 2.59e-01 L3 9.63e-02 BCd 0.00e+00 BCn 2.21e-01
+B20 early stop at epoch 1399 (plateau 0.99% over 300 ep)
+  MC-dropout pass 20/30
+member 20 done (OOB n=13).
+  geo-prior calib on 37 training wells: K_far=73 K_chan=182 m/day  R2=0.40
+B21 ep   600 | L=6.159e+00 | L2 4.24e-01 L3 8.88e-02 BCd 0.00e+00 BCn 2.90e-01
+B21 ep  1200 | L=5.926e+00 | L2 3.97e-01 L3 8.71e-02 BCd 0.00e+00 BCn 3.11e-01
+B21 early stop at epoch 1440 (plateau 0.97% over 300 ep)
+  MC-dropout pass 20/30
+member 21 done (OOB n=15).
+  geo-prior calib on 37 training wells: K_far=77 K_chan=148 m/day  R2=0.25
+B22 ep   600 | L=4.770e+00 | L2 3.09e-01 L3 6.94e-02 BCd 0.00e+00 BCn 2.63e-01
+B22 ep  1200 | L=4.453e+00 | L2 2.78e-01 L3 6.61e-02 BCd 0.00e+00 BCn 2.52e-01
+B22 early stop at epoch 1381 (plateau 0.91% over 300 ep)
+  MC-dropout pass 20/30
+member 22 done (OOB n=14).
+  geo-prior calib on 37 training wells: K_far=81 K_chan=120 m/day  R2=0.08
+B23 ep   600 | L=5.140e+00 | L2 2.95e-01 L3 1.27e-01 BCd 0.00e+00 BCn 1.75e-01
+B23 ep  1200 | L=5.321e+00 | L2 3.37e-01 L3 1.08e-01 BCd 0.00e+00 BCn 1.98e-01
+B23 early stop at epoch 1506 (plateau 0.96% over 300 ep)
+  MC-dropout pass 20/30
+member 23 done (OOB n=12).
+  geo-prior calib on 37 training wells: K_far=88 K_chan=167 m/day  R2=0.24
+B24 ep   600 | L=7.428e+00 | L2 5.63e-01 L3 8.58e-02 BCd 0.00e+00 BCn 1.68e-01
+B24 ep  1200 | L=6.145e+00 | L2 4.82e-01 L3 5.76e-02 BCd 0.00e+00 BCn 1.57e-01
+B24 early stop at epoch 1563 (plateau 0.99% over 300 ep)
+  MC-dropout pass 20/30
+member 24 done (OOB n=13).
+  geo-prior calib on 37 training wells: K_far=75 K_chan=148 m/day  R2=0.19
+B25 ep   600 | L=4.908e+00 | L2 2.91e-01 L3 1.02e-01 BCd 0.00e+00 BCn 1.36e-01
+B25 ep  1200 | L=4.604e+00 | L2 2.87e-01 L3 8.51e-02 BCd 0.00e+00 BCn 1.23e-01
+B25 early stop at epoch 1589 (plateau 0.98% over 300 ep)
+  MC-dropout pass 20/30
+member 25 done (OOB n=16).
+  geo-prior calib on 37 training wells: K_far=88 K_chan=201 m/day  R2=0.36
+B26 ep   600 | L=3.923e+00 | L2 2.47e-01 L3 4.02e-02 BCd 0.00e+00 BCn 1.85e-01
+B26 ep  1200 | L=3.320e+00 | L2 2.08e-01 L3 2.99e-02 BCd 0.00e+00 BCn 2.00e-01
+B26 early stop at epoch 1656 (plateau 1.00% over 300 ep)
+  MC-dropout pass 20/30
+member 26 done (OOB n=14).
+  geo-prior calib on 37 training wells: K_far=97 K_chan=161 m/day  R2=0.15
+B27 ep   600 | L=7.507e+00 | L2 5.74e-01 L3 9.56e-02 BCd 0.00e+00 BCn 2.11e-01
+B27 ep  1200 | L=6.248e+00 | L2 4.73e-01 L3 7.23e-02 BCd 0.00e+00 BCn 2.05e-01
+B27 early stop at epoch 1572 (plateau 0.98% over 300 ep)
+  MC-dropout pass 20/30
+member 27 done (OOB n=15).
+  geo-prior calib on 37 training wells: K_far=73 K_chan=143 m/day  R2=0.26
+B28 ep   600 | L=4.318e+00 | L2 2.56e-01 L3 8.32e-02 BCd 0.00e+00 BCn 2.20e-01

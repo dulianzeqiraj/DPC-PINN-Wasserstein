@@ -1,0 +1,65 @@
+
+	Trial License -- for use to evaluate programs for possible purchase as an end-user only.
+
+GPU detected -> members train sequentially on GPU.
+[> In dlarray/gpuArray (line 22)
+In uq_bootstrap (line 66)
+In run (line 100)] 
+[Warning: Support for GPU devices with compute capability 6.1 will be removed in a future MATLAB release. For more information on GPU support, see <a
+href="matlab:web('http://www.mathworks.com/help/parallel-computing/gpu-computing-requirements.html','-browser')">GPU Computing Requirements</a>.] 
+Collocation pool... geo-prior calib: K_far=83 K_chan=148 m/day  R2=0.20
+done (12.7 s).
+Bootstrap: M=30 members x 1800 epochs. Existing checkpoints are skipped.
+member 01: checkpoint exists, skipped.
+member 02: checkpoint exists, skipped.
+member 03: checkpoint exists, skipped.
+member 04: checkpoint exists, skipped.
+member 05: checkpoint exists, skipped.
+member 06: checkpoint exists, skipped.
+member 07: checkpoint exists, skipped.
+member 08: checkpoint exists, skipped.
+member 09: checkpoint exists, skipped.
+member 10: checkpoint exists, skipped.
+member 11: checkpoint exists, skipped.
+member 12: checkpoint exists, skipped.
+member 13: checkpoint exists, skipped.
+member 14: checkpoint exists, skipped.
+member 15: checkpoint exists, skipped.
+member 16: checkpoint exists, skipped.
+member 17: checkpoint exists, skipped.
+member 18: checkpoint exists, skipped.
+member 19: checkpoint exists, skipped.
+member 20: checkpoint exists, skipped.
+member 21: checkpoint exists, skipped.
+member 22: checkpoint exists, skipped.
+member 23: checkpoint exists, skipped.
+member 24: checkpoint exists, skipped.
+member 25: checkpoint exists, skipped.
+member 26: checkpoint exists, skipped.
+member 27: checkpoint exists, skipped.
+  geo-prior calib on 37 training wells: K_far=73 K_chan=143 m/day  R2=0.26
+B28 ep   600 | L=4.318e+00 | L2 2.56e-01 L3 8.32e-02 BCd 0.00e+00 BCn 2.20e-01
+B28 ep  1200 | L=4.002e+00 | L2 2.20e-01 L3 8.51e-02 BCd 0.00e+00 BCn 2.16e-01
+B28 early stop at epoch 1660 (plateau 0.99% over 300 ep)
+  MC-dropout pass 20/30
+member 28 done (OOB n=15).
+  geo-prior calib on 37 training wells: K_far=97 K_chan=159 m/day  R2=0.17
+B29 ep   600 | L=4.816e+00 | L2 3.46e-01 L3 5.15e-02 BCd 0.00e+00 BCn 2.17e-01
+B29 ep  1200 | L=5.058e+00 | L2 3.85e-01 L3 4.29e-02 BCd 0.00e+00 BCn 2.27e-01
+B29 early stop at epoch 1646 (plateau 0.97% over 300 ep)
+  MC-dropout pass 20/30
+member 29 done (OOB n=9).
+  geo-prior calib on 37 training wells: K_far=77 K_chan=171 m/day  R2=0.28
+B30 ep   600 | L=7.028e+00 | L2 4.88e-01 L3 1.07e-01 BCd 0.00e+00 BCn 1.60e-01
+B30 ep  1200 | L=6.437e+00 | L2 4.41e-01 L3 8.63e-02 BCd 0.00e+00 BCn 1.32e-01
+B30 early stop at epoch 1549 (plateau 0.99% over 300 ep)
+  MC-dropout pass 20/30
+member 30 done (OOB n=13).
+All members present after 22.5 min.
+
+========== BOOTSTRAP OOB VALIDATION (n=37 wells with >=3 OOB members) ==========
+logK : OOB RMSE = 0.364  MAE = 0.311 | 90% coverage (sigma_total) = 11%
+head : OOB RMSE = 7.36 m MAE = 6.29 m | 90% coverage (sigma_total) = 38%
+sigma ratio (median over wells): sigma_boot/sigma_MC = 1.3 (logK), 1.1 (head)
+Per-well results written to results/uq_bootstrap_wells.csv
+STAGE_OK

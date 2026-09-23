@@ -1,0 +1,19 @@
+
+	Trial License -- for use to evaluate programs for possible purchase as an end-user only.
+
+[SYN] grid 209 x 83 at 0.25 km, 5598 cells inside the aquifer.
+[SYN] truth: logK in [3.97, 5.20], K in [53, 181] m/day, n in [0.257, 0.345].
+[SYN] correlation of logK with the Kozeny-Carman term: 0.919 (residual sd 0.13).
+[SYN] land-boundary heads interpolated from the wells, clamped to [4.0, 45.0] m.
+[SYN] solver check, uniform K and a linear boundary field: max error 7.46e-14 m
+[SYN] head field: 4.0 to 25.0 m (observed range 4.0 to 45.0 m).
+[SYN] virtual wells: K 44 to 308 m/day, head 3.2 to 22.5 m, all finite.
+[> In dlarray/gpuArray (line 22)
+In main_synthetic (line 183)
+In run (line 100)] 
+[Warning: Support for GPU devices with compute capability 6.1 will be removed in a future MATLAB release. For more information on GPU support, see <a
+href="matlab:web('http://www.mathworks.com/help/parallel-computing/gpu-computing-requirements.html','-browser')">GPU Computing Requirements</a>.] 
+[SYN] geo-prior recalibrated on the synthetic wells: K_far=71 K_chan=110 R2=0.13
+[SYN] base        checkpoint exists, loading.
+
+########## SYNTHETIC +L5  (L5=0.05 L6=0 L7=0, 4 layers, 64 units) ##########

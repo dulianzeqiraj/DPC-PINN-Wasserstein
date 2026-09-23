@@ -1,0 +1,29 @@
+
+	Trial License -- for use to evaluate programs for possible purchase as an end-user only.
+
+paired per-fold difference, DPC-PINN minus RK + DRASTIC:
+  mean +0.0096, sd 0.0396, n = 5 folds, t = +0.54
+  per fold: [-0.0021 0 0.0352 0.0594 -0.0444]
+Written: figures/fig8_rmse_bars.png
+Written: results/per_fold_rmse.csv
+    fold    DPC_PINN      OK       RK_DRASTIC      RF       paired_diff
+    ____    ________    _______    __________    _______    ___________
+
+     1       0.4684     0.46975     0.47055      0.48221     -0.0021454
+     2      0.32253     0.32162     0.32254      0.43463    -1.0085e-05
+     3      0.26611     0.24487     0.23094      0.36753       0.035179
+     4      0.24923     0.18197     0.18981      0.34092       0.059423
+     5      0.36767     0.43865     0.41203      0.40343      -0.044358
+
+
+================ TABLE 5 DRAFT (logK, n=37 held-out) ================
+method        RMSE    MAE     factor   cov90 
+DPC-PINN      0.347  0.282  1.42    8%
+OK            0.352  0.209  1.42     - 
+RK_DRASTIC    0.346  0.205  1.41     - 
+RF            0.412  0.321  1.51     - 
+(trivial)     0.549  - training-fold mean predictor
+
+HEAD (DPC-PINN only): RMSE = 6.82 m  MAE = 5.81 m  cov90 = 27%   (trivial 11.42 m)
+Written: results/TABLE5_draft.csv
+STAGE_OK

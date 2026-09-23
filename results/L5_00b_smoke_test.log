@@ -1,0 +1,25 @@
+
+	Trial License -- for use to evaluate programs for possible purchase as an end-user only.
+
+[> In dlarray/gpuArray (line 22)
+In smoke_test>micro_train (line 179)
+In smoke_test (line 87)
+In run (line 100)] 
+[Warning: Support for GPU devices with compute capability 6.1 will be removed in a future MATLAB release. For more information on GPU support, see <a
+href="matlab:web('http://www.mathworks.com/help/parallel-computing/gpu-computing-requirements.html','-browser')">GPU Computing Requirements</a>.] 
+
+==================== SMOKE TEST REPORT ====================
+PASS  1. data files present, row counts and columns OK (37/3411/180/713/37)
+PASS  2. boundary roles v2.6: no-flow=sea only (801), all land FREE, Dirichlet=0, normals finite
+PASS  3. facies_pool: classes valid, unsampled north -> neutral (medium)
+PASS  3b. geo-prior: K_far=83 K_chan=148 R2=0.20, ramp+corridor logic OK
+PASS  4. seed replay: fold assignment reproducible, sizes 8/8/7/7/7
+PASS  5. micro-train [single+auto]: BCd==0, in-sample vs trivial +32%, 96.0 s/300ep
+PASS  6. micro-train [double+auto]: BCd==0, in-sample vs trivial +32%, 85.4 s/300ep
+PASS  7. micro-train [single+forceCPU]: BCd==0, in-sample vs trivial +32%, 45.6 s/300ep
+PASS  8. config lint: all required cfg fields active (none comment-swallowed)
+PASS  9. results/ is writable
+===========================================================
+ALL 10 CHECKS PASSED -> safe to launch: verify_precision, RUN_ALL, uq_bootstrap
+Written: results/smoke_test.txt
+STAGE_OK

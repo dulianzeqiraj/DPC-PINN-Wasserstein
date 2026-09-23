@@ -1,0 +1,74 @@
+
+	Trial License -- for use to evaluate programs for possible purchase as an end-user only.
+
+[Warning: Support for GPU devices with compute capability 6.1 will be removed in a future MATLAB release. For more information on GPU support, see <a
+href="matlab:web('http://www.mathworks.com/help/parallel-computing/gpu-computing-requirements.html','-browser')">GPU Computing Requirements</a>.] 
+[> In main_closed_loop (line 64)
+In run (line 100)] 
+[CL] 200 posterior passes... done (3.0 s).
+[CL] sigma_y = 0.3472
+   w2     well 1: candidate  50, effective sample size after update 199.9
+   w2     well 2: candidate  78, effective sample size after update 199.8
+   w2     well 3: candidate 325, effective sample size after update 199.7
+   w2     well 4: candidate 112, effective sample size after update 199.7
+   w2     well 5: candidate 376, effective sample size after update 199.6
+   w2     well 1: candidate  78, effective sample size after update 199.9
+   w2     well 2: candidate  50, effective sample size after update 199.8
+   w2     well 3: candidate 175, effective sample size after update 199.7
+   w2     well 4: candidate 196, effective sample size after update 199.6
+   w2     well 5: candidate 112, effective sample size after update 199.5
+   trace  well 1: candidate 254, effective sample size after update 199.9
+   trace  well 2: candidate   3, effective sample size after update 199.9
+   trace  well 3: candidate 285, effective sample size after update 199.8
+   trace  well 4: candidate 182, effective sample size after update 199.7
+   trace  well 5: candidate 318, effective sample size after update 199.7
+  MC-dropout pass 20/30
+
+########## CLOSED LOOP: W2, 37 + 5 wells ##########
+CL-W2 ep   600 | L=4.047e+00 | L2 1.35e-01 L3 1.63e-01 BCd 0.00e+00 BCn 4.05e-01
+CL-W2 ep  1200 | L=4.212e+00 | L2 1.56e-01 L3 1.44e-01 BCd 0.00e+00 BCn 4.73e-01
+CL-W2 ep  1800 | L=3.509e+00 | L2 1.08e-01 L3 1.32e-01 BCd 0.00e+00 BCn 4.70e-01
+  MC-dropout pass 20/30
+
+########## CLOSED LOOP: W2-Lambda, 37 + 5 wells ##########
+CL-W2-Lambda ep   600 | L=4.427e+00 | L2 2.09e-01 L3 1.32e-01 BCd 0.00e+00 BCn 3.52e-01
+CL-W2-Lambda ep  1200 | L=4.019e+00 | L2 1.71e-01 L3 1.31e-01 BCd 0.00e+00 BCn 3.07e-01
+CL-W2-Lambda early stop at epoch 1695 (plateau 0.96% over 300 ep)
+  MC-dropout pass 20/30
+
+########## CLOSED LOOP: A-optimal, 37 + 5 wells ##########
+CL-A-optimal ep   600 | L=4.350e+00 | L2 1.71e-01 L3 1.68e-01 BCd 0.00e+00 BCn 3.07e-01
+CL-A-optimal ep  1200 | L=3.820e+00 | L2 1.19e-01 L3 1.56e-01 BCd 0.00e+00 BCn 3.93e-01
+CL-A-optimal ep  1800 | L=3.079e+00 | L2 7.68e-02 L3 1.39e-01 BCd 0.00e+00 BCn 3.59e-01
+  MC-dropout pass 20/30
+
+########## CLOSED LOOP: space-filling, 37 + 5 wells ##########
+CL-space-filling ep   600 | L=3.620e+00 | L2 1.24e-01 L3 1.29e-01 BCd 0.00e+00 BCn 3.44e-01
+CL-space-filling ep  1200 | L=3.576e+00 | L2 1.16e-01 L3 1.43e-01 BCd 0.00e+00 BCn 3.76e-01
+CL-space-filling early stop at epoch 1792 (plateau 0.96% over 300 ep)
+  MC-dropout pass 20/30
+
+########## CLOSED LOOP: random, 37 + 5 wells ##########
+CL-random ep   600 | L=3.841e+00 | L2 1.39e-01 L3 1.42e-01 BCd 0.00e+00 BCn 2.58e-01
+CL-random ep  1200 | L=3.481e+00 | L2 1.22e-01 L3 1.26e-01 BCd 0.00e+00 BCn 3.53e-01
+CL-random ep  1800 | L=3.698e+00 | L2 1.46e-01 L3 1.25e-01 BCd 0.00e+00 BCn 3.59e-01
+  MC-dropout pass 20/30
+
+============ CLOSED-LOOP VALIDATION, field errors against the truth ============
+         design          new_wells    logK_RMSE     n_RMSE     head_RMSE    logK_gain_pct    n_gain_pct
+    _________________    _________    _________    ________    _________    _____________    __________
+
+    "none (37 wells)"        0         0.28991     0.017652     2.8922              0               0  
+    "W2"                     5         0.25079     0.015812       2.04         13.495          10.422  
+    "W2-Lambda"              5          0.2771      0.01673     2.2528         4.4185          5.2226  
+    "A-optimal"              5          0.2351     0.016021     2.0524         18.906          9.2397  
+    "space-filling"          5         0.24393     0.016883     1.9308         15.858          4.3551  
+    "random"                 5         0.36305     0.020862     2.1603         -25.23         -18.187  
+
+
+The question this answers is not which ranking looks sensible on a map, but whether
+drilling where the criterion says improves the field estimate more than drilling
+elsewhere. Positive gain means it does.
+
+Written: results/closed_loop.csv, figures/fig12_closed_loop.png
+STAGE_OK

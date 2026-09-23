@@ -1,0 +1,72 @@
+
+	Trial License -- for use to evaluate programs for possible purchase as an end-user only.
+
+GPU detected -> folds train on GPU.
+[> In dlarray/gpuArray (line 22)
+In main_cv (line 53)
+In run (line 100)] 
+[Warning: Support for GPU devices with compute capability 6.1 will be removed in a future MATLAB release. For more information on GPU support, see <a
+href="matlab:web('http://www.mathworks.com/help/parallel-computing/gpu-computing-requirements.html','-browser')">GPU Computing Requirements</a>.] 
+Collocation pool... geo-prior calib: K_far=83 K_chan=148 m/day  R2=0.20
+done (5.0 s).
+
+=== FOLD 1/5: train 29, test 8 wells ===
+  geo-prior calib on 29 training wells: K_far=84 K_chan=137 m/day  R2=0.16
+F1 ep   300 | L=5.977e+00 | L2 4.03e-01 L3 7.37e-02 BCd 0.00e+00 BCn 2.07e-01
+F1 ep   600 | L=5.541e+00 | L2 3.89e-01 L3 6.93e-02 BCd 0.00e+00 BCn 2.16e-01
+F1 ep   900 | L=5.533e+00 | L2 3.89e-01 L3 7.76e-02 BCd 0.00e+00 BCn 2.01e-01
+F1 ep  1200 | L=5.358e+00 | L2 3.74e-01 L3 6.58e-02 BCd 0.00e+00 BCn 2.46e-01
+F1 early stop at epoch 1283 (plateau 0.97% over 300 ep)
+  MC-dropout pass 20/30
+  saved ..\results\cv_ckpt\fold_1.mat
+
+=== FOLD 2/5: train 29, test 8 wells ===
+  geo-prior calib on 29 training wells: K_far=88 K_chan=162 m/day  R2=0.22
+F2 ep   300 | L=7.243e+00 | L2 5.13e-01 L3 1.17e-01 BCd 0.00e+00 BCn 1.79e-01
+F2 ep   600 | L=6.498e+00 | L2 4.62e-01 L3 9.24e-02 BCd 0.00e+00 BCn 2.46e-01
+F2 ep   900 | L=5.200e+00 | L2 3.44e-01 L3 9.13e-02 BCd 0.00e+00 BCn 2.23e-01
+F2 ep  1200 | L=5.297e+00 | L2 3.62e-01 L3 8.68e-02 BCd 0.00e+00 BCn 2.29e-01
+F2 ep  1500 | L=5.098e+00 | L2 3.27e-01 L3 8.91e-02 BCd 0.00e+00 BCn 2.66e-01
+F2 early stop at epoch 1657 (plateau 0.98% over 300 ep)
+  MC-dropout pass 20/30
+  saved ..\results\cv_ckpt\fold_2.mat
+
+=== FOLD 3/5: train 30, test 7 wells ===
+  geo-prior calib on 30 training wells: K_far=83 K_chan=136 m/day  R2=0.14
+F3 ep   300 | L=5.524e+00 | L2 3.29e-01 L3 1.21e-01 BCd 0.00e+00 BCn 1.69e-01
+F3 ep   600 | L=6.016e+00 | L2 3.92e-01 L3 1.10e-01 BCd 0.00e+00 BCn 2.03e-01
+F3 ep   900 | L=4.648e+00 | L2 2.67e-01 L3 1.12e-01 BCd 0.00e+00 BCn 1.89e-01
+F3 ep  1200 | L=4.798e+00 | L2 2.87e-01 L3 1.03e-01 BCd 0.00e+00 BCn 2.15e-01
+F3 ep  1500 | L=5.316e+00 | L2 3.36e-01 L3 1.08e-01 BCd 0.00e+00 BCn 2.47e-01
+F3 early stop at epoch 1616 (plateau 0.97% over 300 ep)
+  MC-dropout pass 20/30
+  saved ..\results\cv_ckpt\fold_3.mat
+
+=== FOLD 4/5: train 30, test 7 wells ===
+  geo-prior calib on 30 training wells: K_far=88 K_chan=159 m/day  R2=0.20
+F4 ep   300 | L=6.773e+00 | L2 3.98e-01 L3 1.68e-01 BCd 0.00e+00 BCn 2.34e-01
+F4 ep   600 | L=7.026e+00 | L2 4.92e-01 L3 1.22e-01 BCd 0.00e+00 BCn 2.24e-01
+F4 ep   900 | L=6.189e+00 | L2 4.34e-01 L3 9.61e-02 BCd 0.00e+00 BCn 2.54e-01
+F4 ep  1200 | L=5.939e+00 | L2 4.07e-01 L3 1.02e-01 BCd 0.00e+00 BCn 2.66e-01
+F4 early stop at epoch 1315 (plateau 0.97% over 300 ep)
+  MC-dropout pass 20/30
+  saved ..\results\cv_ckpt\fold_4.mat
+
+=== FOLD 5/5: train 30, test 7 wells ===
+  geo-prior calib on 30 training wells: K_far=71 K_chan=151 m/day  R2=0.32
+F5 ep   300 | L=6.853e+00 | L2 4.24e-01 L3 1.45e-01 BCd 0.00e+00 BCn 1.68e-01
+F5 ep   600 | L=5.871e+00 | L2 4.06e-01 L3 9.43e-02 BCd 0.00e+00 BCn 1.91e-01
+F5 ep   900 | L=5.552e+00 | L2 3.66e-01 L3 9.41e-02 BCd 0.00e+00 BCn 2.42e-01
+F5 ep  1200 | L=4.633e+00 | L2 2.92e-01 L3 8.46e-02 BCd 0.00e+00 BCn 2.35e-01
+F5 ep  1500 | L=4.953e+00 | L2 3.18e-01 L3 8.43e-02 BCd 0.00e+00 BCn 2.42e-01
+F5 early stop at epoch 1565 (plateau 0.97% over 300 ep)
+  MC-dropout pass 20/30
+  saved ..\results\cv_ckpt\fold_5.mat
+
+================ 5-FOLD CV SUMMARY (n=37 held-out predictions) ================
+logK : RMSE = 0.347   MAE = 0.282   (factor = 1.42)
+head : RMSE = 6.82 m  MAE = 5.81 m
+90% interval coverage:  logK 8%   head 27%   (nominal 90%)
+Total CV wall time: 34.2 min
+Per-well results written to results/cv_results.csv
+STAGE_OK

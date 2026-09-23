@@ -1,0 +1,101 @@
+
+	Trial License -- for use to evaluate programs for possible purchase as an end-user only.
+
+
+=========== SPLIT-CONFORMAL CALIBRATION (alpha = 0.10, nominal 90%) ===========
+set            qty      n   raw cov        q  cov(full)  cov(LOO)    bound    worst
+5-fold CV      logK    37      8.1%    8.899      94.6%     91.9%   0.9189    17.95
+5-fold CV      head    37     27.0%    7.190      94.6%     91.9%   0.9189     9.98
+bootstrap OOB  logK    37     10.8%    4.199      94.6%     91.9%   0.9189    10.29
+bootstrap OOB  head    37     37.8%    5.821      94.6%     91.9%   0.9189     8.42
+
+Read the columns as:
+  raw cov    empirical coverage of mean +- 1.645*sigma_total, before any calibration
+  q          the conformal multiplier that replaces 1.645
+  cov(full)  coverage of that multiplier on the wells that produced it (optimistic)
+  cov(LOO)   coverage when the multiplier is recomputed without the tested well (honest)
+  bound      finite-sample guarantee ceil((m+1)(1-alpha))/(m+1) for the LOO calibration size
+  worst      largest standardized residual, i.e. the well no ensemble anticipates
+
+Written: results/conformal_calibration.csv and results/conformal_scores.csv
+[OED] posterior loaded from results/trained_params.mat (no retraining).
+[OED] loss weights of that model: L1=1 L2=10 L3=10 L4=0 L5=0.05 L6=0.5 L7=1.5
+[OED] support 180 nodes, 400 candidates, 37 existing wells.
+[OED] 200 posterior passes over 617 points... done (7.4 s).
+[OED] sigma_y = 0.2879 log-units (in-sample residual RMS at the 37 wells).
+[OED] calibrating the posterior: 1.64 for the between-member variance the dropout cloud omits,
+      2.55 for the conformal multiplier (q = 4.199 against 1.645), product 4.20
+[OED] candidate spread 0.0574 raw, 0.2410 calibrated, against sigma_y 0.2879 (ratio 0.84)
+[OED] mean ground cost: 0.9027 plain, 0.8933 Lambda-weighted.
+[OED] solver check on a case with a known answer: exact 0.48191
+      raw entropic 0.56770 (gap 17.80%), debiased divergence 0.48622 (gap 0.89%)
+[OED] scoring 400 candidates, 256 simulated data each...
+[OED] scoring done (374.7 s).
+[OED] greedy sequences...
+   w2     well 1: candidate  85, effective sample size after update 172.3
+   w2     well 2: candidate  80, effective sample size after update 149.5
+   w2     well 3: candidate 190, effective sample size after update 129.1
+   w2     well 4: candidate 241, effective sample size after update 117.2
+   w2     well 5: candidate 264, effective sample size after update 110.2
+   w2     well 1: candidate 190, effective sample size after update 170.7
+   w2     well 2: candidate  80, effective sample size after update 146.2
+   w2     well 3: candidate  85, effective sample size after update 128.6
+   w2     well 4: candidate 196, effective sample size after update 112.2
+   w2     well 5: candidate 152, effective sample size after update 94.8
+   trace  well 1: candidate 253, effective sample size after update 181.3
+   trace  well 2: candidate  80, effective sample size after update 157.2
+   trace  well 3: candidate 196, effective sample size after update 137.0
+   trace  well 4: candidate 190, effective sample size after update 117.4
+   trace  well 5: candidate  41, effective sample size after update 110.2
+
+============= DESIGN COMPARISON, identical posterior =============
+        design         n_wells    W2sq_cumulative    W2sq_sd     trace_removed_frac
+    _______________    _______    _______________    ________    __________________
+
+    "W2"                  1            0.2605               0        -0.0015094    
+    "W2"                  2           0.50465               0         0.0049618    
+    "W2"                  3           0.76796               0         0.0086776    
+    "W2"                  4            1.0417               0         0.0046968    
+    "W2"                  5            1.3074               0         0.0013967    
+    "W2-Lambda"           1           0.25444               0         0.0027041    
+    "W2-Lambda"           2           0.51243               0         0.0090349    
+    "W2-Lambda"           3           0.77319               0         0.0090519    
+    "W2-Lambda"           4            1.0391               0          0.010752    
+    "W2-Lambda"           5            1.3064               0          0.017217    
+    "A-optimal"           1           0.22293               0         -0.003282    
+    "A-optimal"           2           0.46563               0        0.00076867    
+    "A-optimal"           3           0.72204               0         0.0051365    
+    "A-optimal"           4            1.0064               0         0.0079109    
+    "A-optimal"           5            1.2506               0         0.0038119    
+    "space-filling"       1           0.21323               0        -0.0052385    
+    "space-filling"       2           0.41856               0        -0.0038649    
+    "space-filling"       3           0.63364               0        -0.0032659    
+    "space-filling"       4           0.84863               0         0.0001448    
+    "space-filling"       5            1.0633               0          0.001205    
+    "random"              1           0.21844        0.013483        0.00039573    
+    "random"              2           0.42751        0.020376         0.0018975    
+    "random"              3            0.6448        0.028371         0.0029376    
+    "random"              4            0.8624         0.03819         0.0038894    
+    "random"              5             1.072         0.04408         0.0053941    
+
+
+---- ranking stability (Spearman against the canonical setting) ----
+           knob           value    spearman_vs_canonical    top5_overlap
+    __________________    _____    _____________________    ____________
+
+    {'epsilon'       }    0.02            0.86525               0.6     
+    {'epsilon'       }    0.05             0.8671               0.8     
+    {'epsilon'       }     0.1            0.82404               0.8     
+    {'sigma_y factor'}     0.5            0.83591               0.6     
+    {'sigma_y factor'}       1            0.84869               0.6     
+    {'sigma_y factor'}       2            0.85763               0.6     
+    {'S'             }     100            0.69001               0.4     
+    {'S'             }     150            0.78134               0.6     
+    {'S'             }     200            0.86157               0.6     
+
+
+Written: results/oed_utility_field.csv, oed_selected_plain.csv, oed_selected_drastic.csv,
+         oed_design_comparison.csv, oed_sensitivity.csv, oed_settings.csv
+         figures/fig10_design_comparison.png
+Run make_fig9_oed.m for Figure 9.
+STAGE_OK
